@@ -40,7 +40,7 @@ if exist ./vendor/doctrine (
     echo Laravel vendor exists, skip Laravel composer update ...
 ) else (
     echo Laravel vendor not exists, Laravel backend needs composer update ...
-    call composer update
+    call composer update --no-dev
 )
 
 netstat -o -n -a | findstr /RC:":4624 .*LISTENING" > NUL
