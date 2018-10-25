@@ -1,0 +1,78 @@
+<div class="row mb-2">
+    <div class="col">
+        <a routerLink="/{{route_link.index}}" class="btn btn-success mr-2">Return to List</a>
+    </div>
+
+    <!-- <div class="col text-right">
+        <a routerLink="/{{route_link.create}}" class="btn btn-warning mr-2">Add New</a>
+    </div> -->
+</div>
+
+<!-- loading and no result -->
+<div *ngIf=" !main_result && !error_msg " class="card">
+    <h5 class="text-info m-3"><i class="fa fa-spinner fa-spin mr-3 ml-2" aria-hidden="true"></i>
+        Loading ...</h5>
+</div>
+
+<div *ngIf=" error_msg" class="card">
+    <h5 class="text-danger m-3"><i class="fa fa-exclamation-triangle" aria-hidden="true" mr-3 ml-2></i>
+        {{error_msg}}</h5>
+</div>
+
+<!-- show details component -->
+<div *ngIf="main_result && main_result as item ">
+    <h2>TemplateOne Details: <span class="text-info" *ngIf="item.title">{{item.title}}</span> </h2>
+    <table class="table table-hover">
+        <!-- AngularCrud-DETAIL-HTML -->
+    </table>
+
+
+
+
+    <!-- show templateOne relationships -->
+    <!-- <div class="card text-left mb-2">
+        <div class="card-header text-info">
+            Xxx History in this TemplateOne
+        </div>
+        <div class="card-body">
+            <table *ngIf="all_relations" class="table table-hover table-striped">
+                <thead>
+                    <tr class="table-secondary">
+                        <th>ID</th>
+                        <th>Rows</th>
+                        <th>Columns</th>
+                        <th>Height</th>
+                        <th>Updated Date & Time</th>
+                    </tr>
+                </thead>
+                <tr *ngFor="let item of all_relations">
+                    <td>{{item.id}}</td>
+                    <td>{{item.row}}</td>
+                    <td>{{item.column}}</td>
+                    <td>{{item.height}}</td>
+                    <td>{{item.updated_at | date : "dd/MM/y, h:m a"}}</td>
+                </tr>
+            </table>
+
+            <div *ngIf="!all_relations">
+                No xxx assigned to this templateOne
+            </div>
+
+        </div>
+    </div> -->
+
+
+
+    <div *ngIf="item.id" class="row">
+
+        <div class="col">
+            <a [routerLink]="['edit']" class="btn btn-primary mr-2 btn-bg">Edit TemplateOne</a>
+        </div>
+
+
+        <div class="col text-right">
+            <!-- <a [routerLink]="['/' + route_link.index, item.id, 'delete']" class="btn btn-danger mr-2 btn-bg">Delete</a> -->
+            <a [routerLink]="['delete']" class="btn btn-danger mr-2 btn-bg">Delete</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,35 @@
+<div class="row mb-2">
+    <div class="col">
+        <a routerLink="/{{route_link.index}}" class="btn btn-success mr-2">Return to List</a>
+    </div>
+
+    <!-- <div class="col text-right">
+        <a routerLink="/{{route_link.create}}" class="btn btn-warning mr-2">Add New</a>
+    </div> -->
+</div>
+
+<!-- loading and error -->
+<div *ngIf=" !main_result && edit_record_id > 0 " class="card">
+    <h5 class="text-info m-3">
+        <i class="fa fa-spinner fa-spin mr-3 ml-2" aria-hidden="true"></i>
+        Loading ... </h5>
+</div>
+<div *ngIf="error_msg" class="card bg-light">
+    <span class="text-danger m-3">
+        <i class="fa fa-exclamation-triangle" aria-hidden="true" mr-3 ml-2></i>
+        {{ error_msg }} </span>
+</div>
+
+<!-- add and edit form component -->
+<form class="w-75" [formGroup]="main_form" (ngSubmit)="onSubmit()" *ngIf="last_route_part!='delete'">
+    <!-- AngularCrud-FORM-HTML -->
+
+    <div class="mt-2">
+        <span *ngIf="edit_record_id==0">
+            <button type="submit" class="btn btn-primary add-now">Save</button>
+        </span>
+        <span *ngIf="edit_record_id>0">
+            <button type="submit" class="btn btn-primary edit-now">Save</button>
+        </span>
+    </div>
+</form>

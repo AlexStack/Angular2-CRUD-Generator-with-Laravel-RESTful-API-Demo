@@ -1,0 +1,79 @@
+[
+    {
+        "name": "id",
+        "dbType": "integer,false",
+        "htmlType": null,
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "industry",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "stock_name",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "market_cap",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "currency",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "currency_code",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "sector",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    }
+]

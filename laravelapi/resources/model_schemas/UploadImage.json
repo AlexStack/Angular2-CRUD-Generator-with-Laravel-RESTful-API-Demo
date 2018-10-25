@@ -1,0 +1,101 @@
+[
+    {
+        "name": "id",
+        "dbType": "integer,false",
+        "htmlType": null,
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "app_name",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "version",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "domain_name",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "base64_img",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "file_name",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "owner",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "uploaded_img",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "published_date",
+        "dbType": "date",
+        "htmlType": "date",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    }
+]

@@ -1,0 +1,66 @@
+<div class="row mb-2">
+    <div class="col text-left">
+        <a routerLink="/{{route_link.create}}" class="btn btn-primary mr-2">Add New TemplateOne</a>
+    </div>
+</div>
+
+<!-- loading and no result -->
+<div *ngIf=" !main_result && !error_msg " class="card">
+    <h5 class="text-info m-3"><i class="fa fa-spinner fa-spin mr-3 ml-2" aria-hidden="true"></i>
+        Loading ...</h5>
+</div>
+
+<div *ngIf=" error_msg" class="card">
+    <h5 class="text-danger m-3"><i class="fa fa-exclamation-triangle" aria-hidden="true" mr-3 ml-2></i>
+        {{error_msg}}</h5>
+</div>
+
+<!-- list component -->
+<div *ngIf="main_result && main_result.length > 0" class="card">
+
+    <div class="form form-inline m-1">
+        <label for="search" class="form-control-label mr-sm-2"><span class="text-success">
+                Search
+            </span></label>
+        <div *ngIf="load_all_data">
+            <input name="search" id="search" class="form-control form-control-sm mr-sm-2 mb-lg-0" #search (keyup)="main_data_table.gtSearch(search.value)"
+                ng-model-options="{debounce: 2000}" placeholder="Search">
+
+            <button type="button" *ngIf="search.value" class="btn btn-outline-primary" (click)="main_data_table.gtSearch('');search.value=''">Reset
+                All</button>
+
+        </div>
+        <!-- search form for server side -->
+        <div *ngIf="!load_all_data">
+            <input name="search" id="search" class="form-control form-control-sm mr-sm-2 mb-lg-0" #search (keyup)="processSearch(search.value)"
+                placeholder="Search">
+
+            <button type="button" *ngIf="search.value" class="btn btn-outline-primary" (click)="processSearch('');search.value=''">Reset
+                All</button>
+        </div>
+
+    </div>
+
+
+
+    <div *ngIf="main_result.length ==0" class="card">
+        <h5 class="text-danger m-3"><i class="fa fa-exclamation-triangle" aria-hidden="true" mr-3 ml-2></i>
+            No Result</h5>
+    </div>
+
+    <!-- load all data from server side -->
+    <generic-table #main_data_table [gtClasses]="'table table-hover table-striped select-table'" [gtSettings]="dataTableConfig.settings"
+        [gtFields]="dataTableConfig.fields" [gtData]="main_result" [gtOptions]="dataTableOptions" [gtTexts]="{loading:'Loading data...',paginateNext:'Next',paginatePrevious:'Previous'}"
+        (gtEvent)="dataTableTrigger($event)"></generic-table>
+
+    <!-- lazy load some data from server side -->
+    <!-- <generic-table #main_data_table [gtClasses]="'table-sm table-hover table-striped'" [gtSettings]="dataTableConfig.settings"
+        [gtFields]="dataTableConfig.fields" [(gtData)]="main_result" [gtInfo]="dataTableConfig.info"
+        [gtOptions]="dataTableOptions" (gtEvent)="dataTableTrigger($event)" [gtTexts]="{loading:'Loading data,Please wait...',paginateNext:'Next',paginatePrevious:'Previous'}"></generic-table> -->
+
+    <div class="text-center mt-1">
+        <small>
+            <gt-table-info class="form-text text-muted mb-2" [genericTable]="main_data_table"></gt-table-info>
+        </small>
+        <gt-pagination [gtClasses]="'pagination-nm justify-content-center'" [genericTable]="main_data_table"></gt-pagination>
+    </div>

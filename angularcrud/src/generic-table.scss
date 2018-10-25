@@ -1,0 +1,57 @@
+.select-table tr {
+  cursor: pointer;
+}
+
+.gt-highlight-search {
+  background: #f5182366;
+}
+
+generic-table table thead tr th.sort-enable {
+  cursor: pointer;
+}
+
+generic-table table thead tr th.sort-enable:hover {
+  text-decoration: underline;
+}
+
+generic-table table thead tr th.sort-asc {
+  cursor: pointer;
+}
+
+generic-table table thead tr th.sort-asc:hover {
+  text-decoration: underline;
+}
+
+generic-table table thead tr th.sort-asc::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #000;
+  border-radius: 2px;
+  margin-left: 4px;
+  vertical-align: middle;
+}
+
+generic-table table thead tr th.sort-desc {
+  cursor: pointer;
+}
+
+generic-table table thead tr th.sort-desc:hover {
+  text-decoration: underline;
+}
+
+generic-table table thead tr th.sort-desc::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #000;
+  border-radius: 2px;
+  margin-left: 4px;
+  vertical-align: middle;
+}

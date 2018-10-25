@@ -1,0 +1,101 @@
+[
+    {
+        "name": "id",
+        "dbType": "integer,false",
+        "htmlType": null,
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "country",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "city",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "country_code",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "street",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "address",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "postal_code",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "latitude",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    },
+    {
+        "name": "longitude",
+        "dbType": "string",
+        "htmlType": "text",
+        "validations": null,
+        "searchable": true,
+        "fillable": true,
+        "primary": false,
+        "inForm": true,
+        "inIndex": true
+    }
+]
