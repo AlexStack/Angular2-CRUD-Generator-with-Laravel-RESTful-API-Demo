@@ -5,20 +5,22 @@
 - Easily add to exists Angular project
 - Not effect to other exists components
 
-![web-demo-index-page](https://raw.githubusercontent.com/AlexStack/Angular2-CRUD-Generator-with-Laravel-RESTful-API-Demo/master/documents/images/web-demo-index-page-003.png)
+![web-demo-index-page](https://raw.githubusercontent.com/AlexStack/Angular2-CRUD-Generator-with-Laravel-RESTful-API-Demo/master/docs/images/web-demo-index-page-003.png)
 
-![windows-angular-crud-code-generator](https://raw.githubusercontent.com/AlexStack/Angular2-CRUD-Generator-with-Laravel-RESTful-API-Demo/master/documents/images/windows-angular-crud-code-generator-002.png)
+![windows-angular-crud-code-generator](https://raw.githubusercontent.com/AlexStack/Angular2-CRUD-Generator-with-Laravel-RESTful-API-Demo/master/docs/images/windows-angular-crud-code-generator-002.png)
 
-![file-structure.png](https://raw.githubusercontent.com/AlexStack/Angular2-CRUD-Generator-with-Laravel-RESTful-API-Demo/master/documents/images/file-structure.png)
+![file-structure.png](https://raw.githubusercontent.com/AlexStack/Angular2-CRUD-Generator-with-Laravel-RESTful-API-Demo/master/docs/images/file-structure.png)
 
 
 # How to install
 1. Requirements
-    > php7+, npm, composer, sqlite db (already exists for most Linux/Mac/Windows7+)
+    > git, php 7, npm, composer, sqlite db (already exists for most Linux/Mac/Windows7+)
 2. Clone code
     ```
     git clone https://github.com/AlexStack/Angular2-CRUD-Generator-with-Laravel-RESTful-API-Demo.git angular-crud-generator
     ```
+    or
+    > git clone https://github.com/AlexStack/Angular2-CRUD-Generator-with-Laravel-RESTful-API-Demo.git angular-crud-generator
 3. cd angular-crud-generator
     > cd angular-crud-generator
 4. Run code generator script:
@@ -28,7 +30,7 @@
         > sh ./mac_linux_ng_crud_generator.sh
 5. Done
 
-![How to install](https://raw.githubusercontent.com/AlexStack/Angular2-CRUD-Generator-with-Laravel-RESTful-API-Demo/master/documents/images/how-to-install.png)
+![How to install](https://raw.githubusercontent.com/AlexStack/Angular2-CRUD-Generator-with-Laravel-RESTful-API-Demo/master/docs/images/how-to-install.png)
 
 # How it works
 - The generator script will run npm install for Angualr environment and run composer update for Laravel back-end RESTful API environment
@@ -40,27 +42,27 @@
 
 # Some screenshots
 
-![Screenshot](https://raw.githubusercontent.com/AlexStack/Angular2-CRUD-Generator-with-Laravel-RESTful-API-Demo/master/documents/images/windows-angular-crud-code-generator-001.png)
+![Screenshot](https://raw.githubusercontent.com/AlexStack/Angular2-CRUD-Generator-with-Laravel-RESTful-API-Demo/master/docs/images/windows-angular-crud-code-generator-001.png)
 
-![Screenshot](https://raw.githubusercontent.com/AlexStack/Angular2-CRUD-Generator-with-Laravel-RESTful-API-Demo/master/documents/images/windows-angular-crud-code-generator-001-result.png)
+![Screenshot](https://raw.githubusercontent.com/AlexStack/Angular2-CRUD-Generator-with-Laravel-RESTful-API-Demo/master/docs/images/windows-angular-crud-code-generator-001-result.png)
 
-![Screenshot](https://raw.githubusercontent.com/AlexStack/Angular2-CRUD-Generator-with-Laravel-RESTful-API-Demo/master/documents/images/web-demo-index-page-001.png)
+![Screenshot](https://raw.githubusercontent.com/AlexStack/Angular2-CRUD-Generator-with-Laravel-RESTful-API-Demo/master/docs/images/web-demo-index-page-001.png)
 
-![Screenshot](https://raw.githubusercontent.com/AlexStack/Angular2-CRUD-Generator-with-Laravel-RESTful-API-Demo/master/documents/images/web-demo-index-page-002-search.png)
+![Screenshot](https://raw.githubusercontent.com/AlexStack/Angular2-CRUD-Generator-with-Laravel-RESTful-API-Demo/master/docs/images/web-demo-index-page-002-search.png)
 
-![Screenshot](https://raw.githubusercontent.com/AlexStack/Angular2-CRUD-Generator-with-Laravel-RESTful-API-Demo/master/documents/images/web-demo-detail-page-001.png)
+![Screenshot](https://raw.githubusercontent.com/AlexStack/Angular2-CRUD-Generator-with-Laravel-RESTful-API-Demo/master/docs/images/web-demo-detail-page-001.png)
 
-![Screenshot](https://raw.githubusercontent.com/AlexStack/Angular2-CRUD-Generator-with-Laravel-RESTful-API-Demo/master/documents/images/web-demo-edit-page-001.png)
+![Screenshot](https://raw.githubusercontent.com/AlexStack/Angular2-CRUD-Generator-with-Laravel-RESTful-API-Demo/master/docs/images/web-demo-edit-page-001.png)
 
-![Screenshot](https://raw.githubusercontent.com/AlexStack/Angular2-CRUD-Generator-with-Laravel-RESTful-API-Demo/master/documents/images/web-demo-delete.png)
+![Screenshot](https://raw.githubusercontent.com/AlexStack/Angular2-CRUD-Generator-with-Laravel-RESTful-API-Demo/master/docs/images/web-demo-delete.png)
 
-![Screenshot](https://raw.githubusercontent.com/AlexStack/Angular2-CRUD-Generator-with-Laravel-RESTful-API-Demo/master/documents/images/windows-angular-crud-code-generator-002.png)
+![Screenshot](https://raw.githubusercontent.com/AlexStack/Angular2-CRUD-Generator-with-Laravel-RESTful-API-Demo/master/docs/images/windows-angular-crud-code-generator-002.png)
 
-![Screenshot](https://raw.githubusercontent.com/AlexStack/Angular2-CRUD-Generator-with-Laravel-RESTful-API-Demo/master/documents/images/windows-angular-crud-code-generator-002-result.png)
-
-
-
-![Screenshot](https://raw.githubusercontent.com/AlexStack/Angular2-CRUD-Generator-with-Laravel-RESTful-API-Demo/master/documents/images/web-demo-index-page-003.png)
+![Screenshot](https://raw.githubusercontent.com/AlexStack/Angular2-CRUD-Generator-with-Laravel-RESTful-API-Demo/master/docs/images/windows-angular-crud-code-generator-002-result.png)
 
 
-![Screenshot](https://raw.githubusercontent.com/AlexStack/Angular2-CRUD-Generator-with-Laravel-RESTful-API-Demo/master/documents/images/windows-angular-crud-code-generator-003-own-api.png)
+
+![Screenshot](https://raw.githubusercontent.com/AlexStack/Angular2-CRUD-Generator-with-Laravel-RESTful-API-Demo/master/docs/images/web-demo-index-page-003.png)
+
+
+![Screenshot](https://raw.githubusercontent.com/AlexStack/Angular2-CRUD-Generator-with-Laravel-RESTful-API-Demo/master/docs/images/windows-angular-crud-code-generator-003-own-api.png)
