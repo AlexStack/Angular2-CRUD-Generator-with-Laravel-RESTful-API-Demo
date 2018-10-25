@@ -25,7 +25,7 @@ if [ -f "$laravel_vendor_file" ]
 then
 	echo "Laravel vendor already installed, skip composer update ... ";
 else
-	composer update;
+	composer update --no-dev;
 fi
 
 PROCESS_NUM=$(ps -ef | grep "port=4624" | grep -v "grep" | wc -l)
