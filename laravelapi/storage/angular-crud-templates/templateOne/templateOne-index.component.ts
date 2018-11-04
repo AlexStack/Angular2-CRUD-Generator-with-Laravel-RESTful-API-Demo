@@ -51,9 +51,19 @@ export class TemplateOneIndexComponent implements OnInit {
         },
         //AngularCrud-DATATABLE-SETTINGS
         {
-          objectKey: 'action',
+          objectKey: 'detail_link',
           sort: 'disable',
           columnOrder: 100
+        },
+        {
+          objectKey: 'edit_link',
+          sort: 'disable',
+          columnOrder: 110
+        },
+        {
+          objectKey: 'delete_link',
+          sort: 'disable',
+          columnOrder: 120
         },
       ],
       fields: [
@@ -64,12 +74,28 @@ export class TemplateOneIndexComponent implements OnInit {
         },
         //AngularCrud-DATATABLE-FIELDS
         {
-          objectKey: 'action',
-          name: 'Action',
+          objectKey: 'detail_link',
+          name: '',
           value: () => '',
           render: () =>
             '<button type="button" class="btn btn-outline-info btn-sm"><i class="fa fa-file-text-o" aria-hidden="true"></i></button>',
           click: row => this.show(row.id)
+        },
+        {
+          objectKey: 'edit_link',
+          name: '',
+          value: () => '',
+          render: () =>
+            '<button type="button" class="btn btn-outline-info btn-sm"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>',
+          click: row => this.edit(row.id)
+        },
+        {
+          objectKey: 'delete_link',
+          name: '',
+          value: () => '',
+          render: () =>
+            '<button type="button" class="btn btn-outline-info btn-sm"><i class="fa fa-trash-o" aria-hidden="true"></i></button>',
+          click: row => this.delete(row.id)
         },
       ],
     }
@@ -141,9 +167,16 @@ export class TemplateOneIndexComponent implements OnInit {
   }
 
   show(id: number) {
-    console.log(id);
     this.router.navigate([TemplateOneRoute.index, id]);
+  }
 
+  edit(id: number) {
+    //this.router.navigate([TemplateOneRoute.index, id, 'edit']);
+    this.router.navigateByUrl('/' + TemplateOneRoute.edit.replace(':id', String(id)));
+  }
+
+  delete(id: number) {
+    this.router.navigate([TemplateOneRoute.index, id, 'delete']);
   }
 
   dataTableTrigger($event: any) {
@@ -157,7 +190,7 @@ export class TemplateOneIndexComponent implements OnInit {
         break;
       case 'gt-row-clicked':
         //console.log($event.value);
-        this.show($event.value.row.id);
+        //this.show($event.value.row.id);
         break;
       default:
         //console.log($event);

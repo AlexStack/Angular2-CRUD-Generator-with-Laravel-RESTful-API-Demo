@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::view('/reactspa/{path?}', 'react_js_spa')
+    ->where('path', '.*')
+    ->name('react_js_spa');

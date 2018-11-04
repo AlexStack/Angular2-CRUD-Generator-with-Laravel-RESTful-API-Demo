@@ -12,6 +12,15 @@ import { AppComponent } from './app.component';
 import { GenericTableModule } from '@angular-generic-table/core';
 import { Observable, Subject, asapScheduler, pipe, of, from, interval, merge, fromEvent } from 'rxjs';
 
+
+import { Test40Module } from "./test40/test40.module";
+
+
+import { Test27Module } from "./test27/test27.module";
+
+
+import { Test75Module } from "./test75/test75.module";
+
 //AngularCRUD-IMPORT-MODULE
 
 @NgModule({
@@ -22,6 +31,9 @@ import { Observable, Subject, asapScheduler, pipe, of, from, interval, merge, fr
 		FormsModule,
 		HttpClientModule,
 		//AngularCRUD-NG-MODULE
+	Test75Module,
+	Test27Module,
+	Test40Module,
 	],
 	declarations: [
 		AppComponent

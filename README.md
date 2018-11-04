@@ -14,7 +14,8 @@
 
 # How to install
 1. Requirements
-    > git, php 7, npm, composer, sqlite db (already exists for most Linux/Mac/Windows7+)
+    > git, php 7, npm, composer, node.js, angular cli, sqlite db (already exists for most Linux/Mac/Windows7+)
+    > Memory >= 1GB for small VPS server
 2. Clone code
     ```
     git clone https://github.com/AlexStack/Angular2-CRUD-Generator-with-Laravel-RESTful-API-Demo.git angular-crud-generator

@@ -13,7 +13,7 @@
 $password = 'admin';
 
 //directory relative to this file to search for databases (if false, manually list databases in the $databases variable)
-$directory = 'F:\document_root_002\extraction.netvalue\AngularCRUD\laravelapi\database';
+$directory = dirname(dirname(dirname(__FILE__))) . '\database';
 
 //whether or not to scan the subdirectories of the above directory infinitely deep
 $subdirectories = false;
